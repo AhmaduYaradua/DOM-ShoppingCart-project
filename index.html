@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Nav section -->
+    <header>
+      <nav>
+        <!--Search section  -->
+        <div class="flex flex-row items-center bg-black py-3">
+          <img src="logo.png" alt="Logo" class="w-24 mr-4 ml-4 border-r-2" />
+          <h3 class="text-2xl text-white mr-5">Women</h3>
+          <h3 class="text-2xl text-white mr-96">Men</h3>
+          <input
+            class="border w-[50rem] mr-20 h-10 pl-5 rounded-full"
+            type="text"
+            placeholder="search for items and brands"
+          />
+
+          <div class="flex gap-6 text-white">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+
+        <!-- Categories section  -->
+        <div class="flex pl-6 gap-5 bg-gray-800 items-center text-white py-1">
+          <h4 class="bg-red-600 p-5">Sale</h4>
+          <h4>New in</h4>
+          <h4>Clothing</h4>
+          <h4>Trending</h4>
+          <h4>Shoes</h4>
+          <h4>Accessories</h4>
+          <h4>Brands</h4>
+          <h4>Sportswear</h4>
+          <h4>Grooming</h4>
+          <h4>Topman</h4>
+          <h4>Marketplace</h4>
+        </div>
+
+        <!-- Sales -->
+        <div class="flex justify-between bg-blue-200 py-2">
+          <button class="border border-black py-1 px-4 ml-5">Women</button>
+          <p class="font-bold tracking-widest">SALE: UP TO 60% OFF</p>
+          <button class="border border-black py-1 px-6 mr-5">Men</button>
+        </div>
+      </nav>
+    </header>
+    <!-- Nav section ends  -->
+
+    <!-- My bag section -->
+    <section class="flex gap-10 bg-gray-100 justify-center">
+      <div class="flex flex-col py-5">
+        <div class="flex justify-between items-center px-4 py-6 bg-white mb-3">
+          <h3 class="font-bold text-xl">MY BAG</h3>
+          <p class="text-gray-500">Items are reserved for 60 minutes</p>
+        </div>
+        <!--bag card 1 -->
+        <div class="flex gap-9 border-b-2 py-2 bg-white px-4">
+          <img src="baggy.jpg" alt="" class="w-44 h-60" />
+          <div>
+            <p class="font-bold text-xl mb-4">$30.00</p>
+            <h3 class="text-[20px] text-gray-500 mb-7">
+              ASOS DESIGN baggy jeans in black
+            </h3>
+            <div class="flex gap-16 text-gray-500">
+              <p>Black</p>
+              <p>W31 L34</p>
+              <button class="border rounded-full px-1 bg-white like--btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <button class="border py-2 px-5 mt-11 font-bold add2cart--btn">
+              Added to checkout
+            </button>
+          </div>
+        </div>
+        <!-- bag card 2 -->
+        <div class="flex gap-9 border-b-2 py-2 bg-white px-4">
+          <img src="cardigan.png" alt="" class="w-44 h-60" />
+          <div>
+            <p class="font-bold text-xl mb-4">$30.00</p>
+            <h3 class="text-[20px] text-gray-500 mb-7">
+              ASOS DESIGN unisex cardigan
+            </h3>
+            <div class="flex gap-16 text-gray-500">
+              <p>Black</p>
+              <p>W31 L34</p>
+              <button class="border rounded-full px-1 bg-white like--btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <button class="border py-2 px-5 mt-11 font-bold add2cart--btn">
+              Added to checkout
+            </button>
+          </div>
+        </div>
+        <!--bag card 3  -->
+        <div class="flex gap-9 border-b-2 py-2 bg-white px-4">
+          <img src="women-top.jpg" alt="" class="w-44 h-60" />
+          <div>
+            <p class="font-bold text-xl mb-4">$30.00</p>
+            <h3 class="text-[20px] text-gray-500 mb-7">
+              ASOS DESIGN women top in beige
+            </h3>
+            <div class="flex gap-16 text-gray-500">
+              <p>Black</p>
+              <p>W31 L34</p>
+              <button class="border rounded-full px-1 bg-white like--btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <button class="border py-2 px-5 mt-11 font-bold add2cart--btn">
+              Added to checkout
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checkout section -->
+      <section class="mt-5">
+        <div id="checkout--div">
+          <!-- Cart card 1 -->
+          <div
+            class="flex gap-24 border-b-2 py-2 bg-white px-4 items--in--cart"
+          >
+            <img src="women-top.jpg" alt="" class="w-20 h-26" />
+            <div>
+              <p class="font-bold text-xl mb-4 price--">$50.00</p>
+              <div
+                class="flex gap-2 text-gray-500 counter-set data-structure=1"
+              >
+                <p>Quantity</p>
+                <button id="minus-btn" class="border px-3 decrease--btn">
+                  -</button
+                ><span class="number-total" id="number-total">1</span
+                ><span
+                  ><button id="plus-btn" class="border px-3 increase--btn">
+                    +
+                  </button></span
+                >
+              </div>
+              <button
+                class="border py-2 px-5 mt-2 bg-red-500 text-white remove--btn"
+              >
+                Remove item
+              </button>
+            </div>
+          </div>
+          <!-- Cart card 2 -->
+          <div
+            class="flex gap-24 border-b-2 py-2 bg-white px-4 items--in--cart"
+          >
+            <img src="cardigan.png" alt="" class="w-20 h-26" />
+            <div>
+              <p class="font-bold text-xl mb-4 price--">$60.00</p>
+              <div
+                class="flex gap-2 text-gray-500 counter-set data-structure=2"
+              >
+                <p>Quantity</p>
+                <button id="minus-btn" class="border px-3 decrease--btn">
+                  -</button
+                ><span class="number-total" id="number-total">2</span
+                ><span
+                  ><button id="plus-btn" class="border px-3 increase--btn">
+                    +
+                  </button></span
+                >
+              </div>
+              <button
+                class="border py-2 px-5 mt-2 bg-red-500 text-white remove--btn"
+              >
+                Remove item
+              </button>
+            </div>
+          </div>
+          <!-- Cart card 3 -->
+          <div
+            class="flex gap-24 border-b-2 py-2 bg-white px-4 items--in--cart"
+          >
+            <img src="baggy.jpg" alt="" class="w-20 h-26" />
+            <div>
+              <p class="font-bold text-xl mb-4 price--">$30.00</p>
+              <div
+                class="flex gap-2 text-gray-500 counter-set data-structure=3"
+              >
+                <p>Quantity</p>
+                <button id="minus-btn" class="border px-3 decrease--btn">
+                  -</button
+                ><span class="number-total" id="number-total">1</span
+                ><span
+                  ><button id="plus-btn" class="border px-3 increase--btn">
+                    +
+                  </button></span
+                >
+              </div>
+              <button
+                class="border py-2 px-5 mt-2 bg-red-500 text-white remove--btn"
+              >
+                Remove item
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Total -->
+        <div class="flex border-b-2 px-5 justify-between bg-white py-7">
+          <h3 class="text-2xl font-bold">TOTAL</h3>
+          <p class="font-bold text-gray-500" id="bal-total">$56,000</p>
+        </div>
+        <!-- Delivery -->
+        <div class="bg-white px-5 pt-2 tracking-widest">
+          <div
+            class="flex justify-between items-center text-gray-500 pb-4 border-b-2"
+          >
+            <h3 class="text-black font-bold">Delivery</h3>
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </div>
+        </div>
+        <!-- Payment gateway section -->
+        <div class="flex flex-col bg-white px-5 pt-5">
+          <button
+            class="border bg-green-600 py-2 px-20 text-white font-bold mb-5"
+          >
+            Checkout
+          </button>
+          <h4 class="font-bold">WE ACCEPT:</h4>
+          <div class="flex gap-2 my-5">
+            <img src="visa.png" alt="" class="w-10 h-8" />
+            <img src="mastercard.png" alt="" class="w-10 h-8" />
+            <img src="paypal.png" alt="" class="w-10 h-8" />
+            <img src="applepay.png" alt="" class="w-10 h-8" />
+            <img src="americanexpr.png" alt="" class="w-10 h-8" />
+          </div>
+          <p class="text-gray-500 pb-5">
+            Got a discount code? Add it in the next step
+          </p>
+        </div>
+      </section>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/a61736af53.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
